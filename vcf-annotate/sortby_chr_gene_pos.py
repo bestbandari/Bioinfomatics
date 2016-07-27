@@ -1,13 +1,21 @@
 # # # # # # # # # # # # # # # # # # # # # #
 # Author: Jun He
+# Date: 09/2015
+#
+# This script is used to sort a file first by chromosome then by gene_id
 #
 # Usage:
+#    sortby_chr_pos.py input_file chromosome_column gene_column position_column output_file
+#
 #    input_file         :       The input file to be sorted.
 #    chromosome_column  :       The column of chromosome in the input file.
 #    gene_column        :       The column of gene_id in the input file.
 #    coordinate_column  :       The column of coordinate in the input file.
 #    gene_name_file     :       A mutect output containing gene name. (Optional)
 #    output_file        :       A designated output file.
+#
+# e.g.
+#    python sortby_chr_pos.py dogGenes.gtf 0 8 3 dogGenes.sorted.gtf
 #
 # Note: When the number of input arguments is not correct, an usage message will be printed on the screen.
 #
